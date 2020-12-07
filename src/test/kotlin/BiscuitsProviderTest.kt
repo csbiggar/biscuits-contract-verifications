@@ -12,7 +12,7 @@ import org.junit.jupiter.api.extension.ExtendWith
 @PactBroker(
     host = "localhost:2020",
     scheme = "http",
-    port = "80"
+    port = "8080"
 )
 class BiscuitsProviderTest {
 
@@ -28,9 +28,11 @@ class BiscuitsProviderTest {
         context.verifyInteraction()
     }
 
-    @State("sku 1 does not exist")
-    fun `sku 1 does not exist`() {
+    @State("Biscuit does not exist")
+    fun `Biscuit does not exist`() {
     }
 
-
+    @State("Biscuit exists")
+    fun `Biscuit exists`() {
+    }
 }

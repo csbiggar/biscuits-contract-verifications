@@ -33,5 +33,6 @@ dependencies {
 tasks {
     named<Test>("test") {
         useJUnitPlatform()
+        systemProperty("pact.verifier.publishResults", System.getProperty("pact.verifier.publishResults"))
     }
 }
