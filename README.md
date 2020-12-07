@@ -6,6 +6,7 @@ Simple application serving up a "get biscuits by id" api, to demonstrate the Pro
 ### Prerequisites
 
 * jvm 11+ (recommend installing via [sdkman](https://sdkman.io/))
+* a pact broker (get a quick locally running broker set up by following [these instructions](https://github.com/pact-foundation/pact-broker-docker/blob/master/POSTGRESQL.md#running-postgresql-via-docker) )
 
 ### Run the tests
 
